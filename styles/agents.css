@@ -1,0 +1,252 @@
+.contmom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+}
+
+.contmom h2 {
+  width: 55vw;
+  text-align: left;
+  margin-top: 3vh;
+  color: #030f8e;
+  margin-bottom: 2vh;
+  animation: fadeIn 0.3s ease-in forwards;
+}
+
+table {
+  border: none;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  min-width: 55vw;
+  animation: fadeIn 0.5s ease-in forwards;
+  text-align: center;
+  background: transparent;
+}
+
+table th {
+  border: none;
+  border-bottom: none;
+  height: 5vh;
+  color: #fff;
+  background: #030f8e;
+}
+
+table thead tr th:first-child {
+  border: none;
+  border-top-left-radius: 15px;
+}
+
+table thead tr th:last-child {
+  border: none;
+  border-top-right-radius: 15px;
+}
+
+table td {
+  border: #b9b9b962 solid 1px;
+  background: #fff;
+  height: 6vh;
+}
+
+.btn-modifier {
+  height: 45px;
+  width: 45px;
+  background-color: #030f8e;
+  border: #030f8e solid 3px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  animation-delay: 0.2s;
+  margin-right: 15px;
+}
+
+.btn-modifier img {
+  max-width: 20px;
+}
+
+.btn-supprimer {
+  height: 45px;
+  width: 45px;
+  background-color: #dc3545;
+  border: #dc3545 solid 3px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.btn-supprimer img {
+  max-width: 20px;
+}
+
+.btn-supprimer:hover {
+  background-color: #b62a38;
+}
+
+.btn-modifier:hover {
+  background-color: #020b6e;
+}
+
+.btn-supprimer {
+  margin-left: 15px;
+}
+
+#btnNouvelAgent {
+  width: 20vw;
+  background-color: #030f8e;
+  margin-top: 30px;
+  border: #030f8e solid 3px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+  /* Animation fade-in */
+  animation-delay: 0.2s;
+}
+
+#btnNouvelAgent:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  color: #030f8e;
+  border: #030f8e solid 3px;
+}
+
+/* Style de la fenêtre modale (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.2s ease-in forwards;
+}
+
+/* Style du contenu de la fenêtre modale */
+.modale-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fefefe;
+  margin: 15% auto;
+  border-radius: 15px;
+  padding: 20px;
+  width: 500px;
+  height: 500px;
+  animation: fadeIn 0.3s ease-in forwards;
+}
+
+#formAjoutAgent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+}
+
+#formAjoutAgent select {
+  width: 20vw;
+  text-align: center;
+}
+
+#formAjoutAgent input {
+  width: 20vw;
+}
+
+#btnAjouterAgent {
+  width: 20vw;
+  background-color: #030f8e;
+  margin-top: 10px;
+  border: #030f8e solid 3px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in forwards;
+  /* Animation fade-in */
+}
+
+#btnAjouterAgent:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  color: #030f8e;
+  border: #030f8e solid 3px;
+}
+
+/* Le bouton (x) pour fermer la fenêtre modale */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal modifier agent */
+
+#formModifierAgent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+}
+
+#formModifierAgent select {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+}
+
+#formModifierAgent select {
+  width: 20vw;
+  text-align: center;
+}
+
+#formModifierAgent input {
+  width: 20vw;
+}
+
+.btn-enregistrer {
+  width: 20vw;
+  background-color: #030f8e;
+  margin-top: 10px;
+  border: #030f8e solid 3px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in forwards;
+}
+
+#btnModifierAgent:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  color: #030f8e;
+  border: #030f8e solid 3px;
+}
+
+label {
+  color: #030f8e;
+}

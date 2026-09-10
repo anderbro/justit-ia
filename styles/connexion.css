@@ -1,0 +1,79 @@
+.grandcont{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    background: #f6f6f6;
+    color: #030f8e;
+}
+
+.contmom{
+    width: 60vw;
+    height: 70vh;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.topcont{
+    margin-top: 30px;
+    width: 55vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.botcont{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.prefet{
+    max-width: 7vw;
+}
+
+.svg{
+    max-width: 25vw;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25vw;
+    height: 50vh;
+}
+
+#connexionForm{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 25vw;
+    height: 40vh;
+}
+
+.mail{
+    width: 15vw;
+}
+
+.mdp{
+    width: 15vw;
+}
+
+.connexionbutton{
+    height: 5vh;
+    width: 10vw;
+    color: #fff;
+    border-radius: 5px;
+    background: #030f8e;
+    border: none;
+}

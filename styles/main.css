@@ -1,0 +1,978 @@
+@font-face {
+  font-family: "Marianne";
+  src: url("../fonts/fontes-web/Marianne-Regular.woff") format("woff");
+}
+
+body {
+  font-family: "Marianne", sans-serif;
+}
+
+.text-custom-blue {
+  color: #030f8e;
+  /* Votre couleur bleue personnalisée */
+}
+
+/*==================================================================TETE DE PAGE==================================================================*/
+
+html button:focus {
+  outline: none;
+}
+
+html input {
+  width: 27vw;
+  border: solid 1px #969696;
+}
+
+html input:focus {
+  outline: none;
+  border: 2px solid #4a91e2a8;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.75) inset;
+}
+
+.prenav {
+  display: flex;
+  font-family: "Marianne";
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+  border-bottom: 1px solid rgb(207, 207, 207);
+  color: #030f8e;
+  text-align: center;
+  background-color: white;
+}
+
+.header-image {
+  height: 9vh;
+  width: auto;
+  border-radius: 15px;
+}
+
+.navicon {
+  width: 40vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #030f8e;
+}
+
+.navicon ul {
+  list-style: none;
+  width: 45vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  margin: 0;
+}
+
+.navicon img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.navicon a {
+  text-decoration: none;
+  color: #030f8e;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navicon a:hover {
+  text-decoration: none;
+}
+
+.navicon a::before {
+  text-decoration: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #0056b3;
+  bottom: -3px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.navicon a:hover::before {
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: transform 0.3s;
+}
+
+.text-center {
+  font-size: 2vw;
+  width: 30vw;
+}
+
+.logoutbuttoncontainer {
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  height: 10vh;
+  width: 10vw;
+}
+
+#logoutButton {
+  font-size: 0.8vw;
+  margin-left: 20px;
+  height: 5vh;
+  width: 100vw;
+  background-color: #030f8e;
+  border: #030f8e solid 3px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+#logoutButton:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  color: #030f8e;
+  border: #030f8e solid 3px;
+}
+
+html {
+  background: #f6f6f6;
+}
+
+.contmom {
+  font-family: "Marianne";
+  display: flex;
+  background: #f6f6f6;
+  margin-bottom: 50px;
+}
+
+/*==================================================================MENU DE NAGIVATION==================================================================*/
+
+.column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20vh;
+}
+
+.needs-validation {
+  height: 20vh;
+}
+
+.menu-detailcont {
+  display: flex;
+}
+
+.infoimportantes {
+  width: 20vw;
+}
+
+.menucont {
+  width: 25vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-detail ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70vh;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-detail li {
+  display: flex;
+  align-items: center;
+}
+
+.menu-detail button:focus {
+  outline: none;
+}
+
+.menu-detail button {
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  display: block;
+  padding: 10px 15px;
+  color: #030f8e;
+  background-color: #f2f2f2;
+  box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.1) inset;
+  color: #030f8e;
+  border-radius: 5px;
+  position: relative;
+  transition: color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-detail button:hover {
+  text-decoration: none;
+}
+
+.menu-detail button::before {
+  text-decoration: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #0056b3;
+  bottom: 0px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.1s;
+}
+
+.menu-detail button:hover::before {
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: transform 0.1s;
+}
+
+.menu-detail button:hover {
+  text-decoration: none;
+}
+
+.menu-detail button::before {
+  text-decoration: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #0056b3;
+  bottom: 0px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.1s;
+}
+
+.menu-detail button:hover::before {
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: transform 0.1s;
+}
+
+.menu-detail button.active {
+  background-color: #030f8e;
+  color: #fff;
+}
+
+.menu-detail img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.pagecont {
+  width: 100vw;
+  height: 105vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topcont {
+  position: relative;
+  width: 75vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*==================================================================RECHERCHE==================================================================*/
+
+.recherchecont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 40vw;
+  height: 7vh;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px #ccc;
+  opacity: 0;
+  /* Commencez avec le titre invisible */
+  animation: fadeIn 0.5s ease-in forwards;
+  /* Animation fade-in */
+}
+
+.searchbar {
+  width: 20vw;
+  height: 4vh;
+  background: #ebecf9;
+  border: none;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1) inset;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.placeholder {
+  position: absolute;
+  width: 20vw;
+  height: 4vh;
+  bottom: 5vh;
+  left: 3vw;
+  color: #aaa;
+  /* Couleur du placeholder */
+  pointer-events: none;
+  /* Pour éviter que le placeholder soit cliquable */
+  opacity: 1;
+  /* Opacité par défaut */
+  transition: opacity 0.3s ease;
+  /* Ajoutez une transition d'opacité */
+}
+
+.searchbutton {
+  height: 4vh;
+  width: 10vw;
+  background-color: #030f8e;
+  border: #030f8e solid 3px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.searchbutton:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  color: #030f8e;
+  border: #030f8e solid 3px;
+}
+
+#detailsButton {
+  height: 4.5vh;
+  width: 10vw;
+  background-color: #030f8e;
+  border: #030f8e solid 3px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  /* Commencez avec le titre invisible */
+  animation: fadeIn 0.5s ease-in forwards;
+  /* Animation fade-in */
+  animation-delay: 0.2s;
+}
+
+#detailsButton:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  color: #030f8e;
+  border: #030f8e solid 3px;
+}
+
+.bulle {
+  display: none;
+  /* caché par défaut */
+  position: absolute;
+  transform: translateX(-25vw);
+  width: 60vw;
+  height: 50vh;
+  margin-top: 25px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  z-index: 1;
+  animation: slideDown 0.5s ease;
+  /* Ajoutez une animation "slideDown" */
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(100%);
+    left: 20vw;
+    opacity: 0;
+  }
+
+  to {
+    left: 20vw;
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.annee-filtre-cont {
+  border: #030f8e solid 1px;
+  width: 30vw;
+  height: 10vh;
+}
+
+#createDossierButton {
+  height: 5vh;
+  width: 15vw;
+  background-color: #030f8e;
+  border: #030f8e solid 3px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  /* Commencez avec le titre invisible */
+  animation: fadeIn 0.5s ease-in forwards;
+  /* Animation fade-in */
+  animation-delay: 0.4s;
+}
+
+#createDossierButton:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  color: #030f8e;
+  border: #030f8e solid 3px;
+}
+
+/* Autres styles restent inchangés */
+.container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  background-color: #030f8e;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #030f8e;
+}
+
+.redacteur,
+.recherche_arrete {
+  display: inline-block;
+  margin: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #ccc;
+  vertical-align: top;
+  height: auto;
+  width: 350px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+  padding: 5px;
+  border-radius: 5px;
+
+  width: 100%;
+  margin-top: 10px;
+}
+
+.custom-button {
+  background-color: #f2f2f2;
+  /* Couleur de base */
+
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Style au survol de la souris */
+.custom-button:hover {
+  background-color: #030f8e;
+  /* Couleur bleue au survol */
+  color: #fff;
+  /* Texte blanc au survol */
+}
+
+.table-container {
+  margin: 0 auto;
+  /* Centrer le tableau horizontalement */
+  width: 80%;
+  /* Ajustez la largeur selon vos besoins */
+  margin-top: 20px;
+  /* Marge supérieure pour l'espacement */
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.result-table th,
+.result-table td {
+  /* Bordures autour des cellules */
+  padding: 8px;
+  text-align: center;
+}
+
+#paginationContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Ajoutez cette règle pour désactiver le survol pour la classe 'pagination-cell' */
+.pagination-cell:hover {
+  background-color: white;
+  color: white;
+  cursor: initial;
+}
+
+.table-recherche thead {
+  background: #030f8e;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.container-modif {
+  display: none;
+  padding-top: 2vh;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.container-modif h2 {
+  display: flex;
+  width: 800px;
+}
+
+.detailsContainer {
+  display: flex;
+  float: left;
+  /* max-width: 200px; */
+}
+
+.pagination-button {
+  background-color: #030f8e;
+  border: #030f8e solid 3px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #ffffff;
+  transform: scale(1);
+  color: #030f8e;
+  box-shadow: inset 0 0 0 3px #030f8e;
+}
+
+#det {
+  margin-top: 50px;
+  max-width: 100%;
+}
+
+.appelDetailsForm {
+  height: 100%;
+}
+
+needs-validation #resultContainer {
+  width: 50vw;
+}
+
+.resultcontmom {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 90vw;
+  opacity: 0;
+  /* Commencez avec le titre invisible */
+  animation: fadeIn 0.5s ease-in forwards;
+  /* Animation fade-in */
+  animation-delay: 0.2s;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 75vw;
+  border: #030f8e solid 7px;
+  border-radius: 15px;
+}
+
+#connexion {
+  margin-top: 10%;
+}
+
+#inscription {
+  margin-top: 10%;
+}
+
+#retour {
+  margin-top: 10px;
+  background-color: #030f8e;
+}
+
+/* Styles personnalisés pour les onglets Bootstrap */
+.nav-tabs .nav-link {
+  color: #030f8e;
+  /* Couleur du texte des onglets */
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: #030f8e !important;
+  /* Couleur de fond des onglets actifs */
+  color: white !important;
+  /* Couleur du texte des onglets actifs */
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 5px;
+  /* Ajustez selon vos besoins pour l'espacement */
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+}
+
+button {
+  outline: none;
+}
+
+.view-button {
+  height: 5vh;
+  width: 5vw;
+  background-color: #030f8e;
+  border: #030f8e solid 3px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  color: #030f8e;
+  border: #030f8e solid 3px;
+}
+
+/*==================================================================GESTION PROFIL==================================================================*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#userListContainer {
+  margin-top: 3vh;
+  width: 60vw;
+  text-align: center;
+  height: auto;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.4s ease-in forwards;
+}
+
+.settingsaccounttilttle {
+  color: #030f8e;
+  animation: fadeIn 0.2s ease-in forwards;
+}
+
+.settingsaccountcontmom {
+  width: 100vw;
+  height: 90vh;
+  margin-top: 7vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+table.table {
+  margin: 0;
+}
+
+table.table th {
+  background-color: #030f8e;
+  color: white;
+}
+
+table.table td {
+  background-color: #ffffff;
+}
+
+table.table .color {
+  background: #030f8e;
+  color: white;
+}
+
+.settingaccountbuttoncont {
+  margin-top: 5vh;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+/*Boutons classiques*/
+#toggleAuthButtonConnexion {
+  margin-top: 10px;
+  background-color: #030f8e;
+}
+
+#gestionDroits {
+  background-color: #030f8e;
+  margin-top: 10px;
+  border: #030f8e solid 3px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  /* Commencez avec le titre invisible */
+  animation: fadeIn 0.5s ease-in forwards;
+  /* Animation fade-in */
+  animation-delay: 0.2s;
+}
+
+#gestionDroits:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  color: #030f8e;
+  border: #030f8e solid 3px;
+}
+
+#toggleAuthButtonInscription {
+  background-color: #030f8e;
+  margin-top: 10px;
+  border: #030f8e solid 3px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  /* Commencez avec le titre invisible */
+  animation: fadeIn 0.5s ease-in forwards;
+  /* Animation fade-in */
+}
+
+#toggleAuthButtonInscription:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  color: #030f8e;
+  border: #030f8e solid 3px;
+}
+
+#gestionAgents {
+  background-color: #030f8e;
+  margin-top: 10px;
+  border: #030f8e solid 3px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  /* Commencez avec le titre invisible */
+  animation: fadeIn 0.5s ease-in forwards;
+  /* Animation fade-in */
+  animation-delay: 0.2s;
+}
+
+#gestionAgents:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  color: #030f8e;
+  border: #030f8e solid 3px;
+}
+
+.tableau-profils {
+  width: 75vw;
+}
+
+/*==================================================================PAGE PROFIL==================================================================*/
+
+.profilcontmom {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #030f8e;
+}
+
+.profilContainer {
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 70vw;
+  height: 60vh;
+  animation: fadeIn 0.5s ease-in forwards;
+  /* Animation fade-in */
+}
+
+.topcontprof {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.topcontprof h2 {
+  margin-top: 3vh;
+  width: 35vw;
+}
+
+.botcontprof {
+  width: 65vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+@keyframes dropRotateBounceAndFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10vh) rotate(-45deg);
+  }
+
+  60% {
+    opacity: 1;
+    /* L'image devient entièrement visible */
+    transform: translateY(0) rotate(0deg);
+  }
+
+  70% {
+    transform: translateY(-5vh) rotate(0deg);
+  }
+
+  80% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  90% {
+    transform: translateY(-2vh) rotate(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    /* Gardez l'image complètement visible à la fin */
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.imgprof {
+  max-width: 20vw;
+  margin-bottom: 10vh;
+  opacity: 0;
+  /* Début avec l'image invisible */
+  transform: translateY(-10vh) rotate(-45deg);
+  /* Position initiale */
+  animation: dropRotateBounceAndFadeIn 2s ease-out forwards;
+}
+
+.needs-validation {
+  height: 46vh;
+  width: 35vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  /* Changement ici pour une disposition en ligne */
+}
+
+.champcont1 {
+  width: 15vw;
+  height: 12vh;
+}
+
+.champcont2 {
+  width: 15vw;
+  height: 12vh;
+}
+
+.remdp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 36vh;
+}
+
+.modifprofbtn {
+  height: 5vh;
+  width: 15vw;
+  background-color: #030f8e;
+  border: #030f8e solid 3px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.modifprofbtn:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  color: #030f8e;
+  border: #030f8e solid 3px;
+}
+
+#myTabs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.case-boutons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.case-boutons button {
+  margin: 0;
+}
+
+/*==================================================================RESPONSIVE==================================================================*/

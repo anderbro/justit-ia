@@ -1,0 +1,38 @@
+.contmom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#label {
+    color: #030f8e;
+  }
+  .resumecont label {
+    margin: 0;
+    width: 13vw;
+  }
+
+  .parcelle-pricipale-cont label {
+    margin: 0;
+  }
+  .parcelle-pricipale-cont label {
+    margin: 0;
+  }
+  .infra-popup-cont label {
+    width: 40%;
+    text-align: left;
+  }
+
+  .infra-popup-cont label {
+    width: 40%;
+    z-index: 2;
+  }
+  .form-row label {
+    width: 30%;
+  }
+
+  .form-group label {
+    width: 30%;
+  }
+    
